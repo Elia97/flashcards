@@ -2,197 +2,60 @@ import { Flashcard } from "./types";
 
 export const flashcards: Flashcard[] = [
   {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI",
-    question: "Qual è la definizione intuitiva di insieme secondo Cantor?",
+    topic: "Analisi Matematica",
+    question: "Qual è la definizione di limite di una funzione?",
     answer:
-      "Un insieme è 'una raccolta, classe, aggregato, totalità di oggetti determinati ben distinti della nostra intuizione o del nostro pensiero' (Cantor)",
+      "Il limite di una funzione f(x) per x che tende a un valore c è il valore L che f(x) si avvicina arbitrariamente quando x si avvicina a c.",
   },
   {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI",
-    question: "Quali sono i principali metodi di definizione di un insieme?",
+    topic: "Analisi Matematica",
+    question: "Qual è la definizione di derivata di una funzione?",
     answer:
-      "Metodo estensionale (elencando gli elementi) e metodo intensionale (definendo una proprietà caratteristica).",
+      "La derivata di una funzione f(x) in un punto x0 è il limite del rapporto incrementale quando l'incremento tende a zero, ovvero f'(x0) = lim (h -> 0) [f(x0 + h) - f(x0)] / h.",
   },
   {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI",
-    question: "Cosa significa che un insieme è finito o infinito?",
+    topic: "Analisi Matematica",
+    question: "Cosa rappresenta l'integrale definito di una funzione?",
     answer:
-      "Un insieme è finito se ha un numero finito di elementi, infinito altrimenti.",
+      "L'integrale definito di una funzione f(x) tra a e b rappresenta l'area sottesa dalla curva della funzione nell'intervallo [a, b].",
   },
   {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI",
-    question: "Cos'è il sottoinsieme di un insieme A?",
+    topic: "Algoritmi e Strutture Dati",
+    question: "Cos'è un algoritmo e quali sono le sue proprietà fondamentali?",
     answer:
-      "Un insieme B è sottoinsieme di A se tutti gli elementi di B appartengono anche ad A.",
+      "Un algoritmo è una sequenza finita di istruzioni ben definite per risolvere un problema. Le sue proprietà fondamentali sono correttezza, efficienza, finitezza, chiarezza e generalità.",
   },
   {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI",
-    question: "Cosa si intende per insieme vuoto?",
-    answer: "L'insieme che non contiene alcun elemento, indicato con ∅.",
-  },
-  {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI",
-    question: "Quando due insiemi sono uguali?",
+    topic: "Algoritmi e Strutture Dati",
+    question:
+      "Qual è la differenza tra complessità temporale e spaziale di un algoritmo?",
     answer:
-      "Due insiemi A e B sono uguali se contengono esattamente gli stessi elementi.",
+      "La complessità temporale misura il tempo di esecuzione di un algoritmo in funzione della dimensione dell'input, mentre la complessità spaziale misura la quantità di memoria utilizzata.",
   },
   {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI",
-    question: "Cosa rappresenta l'unione di due insiemi A e B?",
+    topic: "Algoritmi e Strutture Dati",
+    question:
+      "Quali sono le principali operazioni su una struttura dati stack (pila)?",
     answer:
-      "L'insieme degli elementi che appartengono ad almeno uno tra A e B, indicato con A ∪ B.",
+      "Le operazioni principali su una pila sono push (inserimento di un elemento), pop (rimozione dell'ultimo elemento inserito) e top/peek (visualizzazione dell'ultimo elemento senza rimuoverlo).",
   },
   {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI",
-    question: "Cosa rappresenta l'intersezione di due insiemi A e B?",
+    topic: "Calcolo delle Probabilità e Statistica",
+    question:
+      "Qual è la definizione di probabilità secondo la teoria classica?",
     answer:
-      "L'insieme degli elementi che appartengono sia ad A che a B, indicato con A ∩ B.",
+      "La probabilità di un evento è definita come il rapporto tra il numero di casi favorevoli e il numero totale di casi possibili, supponendo che siano tutti equiprobabili.",
   },
   {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI",
-    question: "Cosa si intende per insieme complementare?",
+    topic: "Calcolo delle Probabilità e Statistica",
+    question: "Cosa rappresenta la distribuzione normale?",
     answer:
-      "L'insieme degli elementi che non appartengono a un dato insieme, rispetto a un insieme universo.",
+      "La distribuzione normale è una distribuzione di probabilità continua con una caratteristica forma a campana, centrata sulla media e con deviazione standard che ne determina la dispersione.",
   },
   {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI",
-    question: "Cos'è il prodotto cartesiano di due insiemi A e B?",
+    topic: "Calcolo delle Probabilità e Statistica",
+    question: "Cos'è la varianza di una distribuzione statistica?",
     answer:
-      "L'insieme delle coppie ordinate (a, b) con a appartenente ad A e b appartenente a B, indicato con A × B.",
-  },
-  {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI",
-    question: "Cosa significa che un insieme è numerabile?",
-    answer:
-      "Un insieme è numerabile se i suoi elementi possono essere messi in corrispondenza biunivoca con l'insieme dei numeri naturali.",
-  },
-  {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI NUMERICI",
-    question: "Cos'è un insieme di numeri naturali?",
-    answer:
-      "L'insieme dei numeri naturali è un insieme infinito, strutturalmente il più semplice, costruito a partire dall'insieme vuoto e definito dagli assiomi di Peano.",
-  },
-  {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI NUMERICI",
-    question: "Cosa stabiliscono gli assiomi di Peano?",
-    answer:
-      "Gli assiomi di Peano stabiliscono le proprietà fondamentali dei numeri naturali, come l'esistenza del successore di ogni numero e il principio di induzione.",
-  },
-  {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI NUMERICI",
-    question: "Cos'è il 'successore' di un numero naturale?",
-    answer:
-      "Il successore di un numero naturale è il numero che segue immediatamente quel numero nell'insieme, ad esempio il successore di 0 è 1, e il successore di 1 è 2.",
-  },
-  {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI NUMERICI",
-    question: "Cos'è l'elemento neutro per la somma nei numeri naturali?",
-    answer:
-      "L'elemento neutro per la somma nei numeri naturali è 0, poiché sommare 0 a qualsiasi numero naturale non cambia il valore di quest'ultimo.",
-  },
-  {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI NUMERICI",
-    question: "Qual è la definizione di prodotto nei numeri naturali?",
-    answer:
-      "Il prodotto tra due numeri naturali è definito come la somma ripetuta di un numero naturale per un numero di volte pari all'altro numero.",
-  },
-  {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI NUMERICI",
-    question: "Cos'è il fattoriale di un numero naturale?",
-    answer:
-      "Il fattoriale di un numero naturale n (denotato come n!) è il prodotto di tutti i numeri naturali da 1 a n. Ad esempio, 5! = 5 × 4 × 3 × 2 × 1 = 120.",
-  },
-  {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI NUMERICI",
-    question: "Cos'è un numero intero relativo?",
-    answer:
-      "I numeri interi relativi includono i numeri naturali, i loro opposti (numeri negativi) e lo zero, e sono usati per rappresentare quantità sia positive che negative.",
-  },
-  {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI NUMERICI",
-    question: "Cos'è il valore assoluto di un numero intero?",
-    answer:
-      "Il valore assoluto di un numero intero n è il suo valore senza considerare il segno, denotato |n|. Ad esempio, |-5| = 5 e |5| = 5.",
-  },
-  {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI NUMERICI",
-    question: "Cos'è l'insieme dei numeri razionali?",
-    answer:
-      "L'insieme dei numeri razionali è costituito dai numeri che possono essere espressi come il rapporto di due numeri interi, con il denominatore diverso da zero.",
-  },
-  {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI NUMERICI",
-    question: "Cos'è l'opposto di un numero razionale?",
-    answer:
-      "L'opposto di un numero razionale a/b è -a/b, ovvero si cambia il segno del numeratore.",
-  },
-  {
-    topic: "ELEMENTI DI TEORIA DEGLI INSIEMI NUMERICI",
-    question: "Cos'è il reciproco di un numero razionale?",
-    answer: "Il reciproco di un numero razionale a/b è b/a, purché a ≠ 0.",
-  },
-  {
-    topic: "LE RELAZIONI TRA INSIEMI",
-    question: "Cos'è una relazione tra due insiemi?",
-    answer:
-      "Una relazione tra due insiemi A e B è una legge che associa gli elementi di A con gli elementi di B, in modo tale che ad ogni elemento di A può essere associato uno o più elementi di B.",
-  },
-  {
-    topic: "LE RELAZIONI TRA INSIEMI",
-    question: "Come si scrive 'a è in relazione con b'?",
-    answer: "Si scrive a R b, dove R rappresenta la relazione.",
-  },
-  {
-    topic: "LE RELAZIONI TRA INSIEMI",
-    question: "Cos'è il dominio di una relazione?",
-    answer:
-      "Il dominio di una relazione è l'insieme degli elementi di partenza che sono in relazione con almeno un elemento dell'insieme di arrivo.",
-  },
-  {
-    topic: "LE RELAZIONI TRA INSIEMI",
-    question: "Cos'è il codominio di una relazione?",
-    answer:
-      "Il codominio di una relazione è l'insieme degli elementi di arrivo che sono immagini di almeno un elemento dell'insieme di partenza.",
-  },
-  {
-    topic: "LE RELAZIONI TRA INSIEMI",
-    question: "Cos'è l'immagine di un elemento in una relazione?",
-    answer:
-      "L'immagine di un elemento a mediante una relazione R è l'elemento b tale che a R b.",
-  },
-  {
-    topic: "LE RELAZIONI TRA INSIEMI",
-    question: "Cos'è la controimmagine di un elemento in una relazione?",
-    answer: "La controimmagine di un elemento b è l'elemento a tale che a R b.",
-  },
-  {
-    topic: "LE RELAZIONI TRA INSIEMI",
-    question: "Cos'è una relazione inversa?",
-    answer:
-      "La relazione inversa di una relazione R è una relazione che associa a b il suo controparte a, ed è scritta come b R⁻¹ a.",
-  },
-  {
-    topic: "LE RELAZIONI TRA INSIEMI",
-    question: "Cos'è una relazione vuota?",
-    answer:
-      "Una relazione vuota è una relazione che non associa nessun elemento dell'insieme di partenza con nessun elemento dell'insieme di arrivo.",
-  },
-  {
-    topic: "LE RELAZIONI TRA INSIEMI",
-    question: "Cos'è una relazione totale?",
-    answer:
-      "Una relazione totale è una relazione che associa ogni elemento dell'insieme di partenza con ogni elemento dell'insieme di arrivo.",
-  },
-  {
-    topic: "LE RELAZIONI TRA INSIEMI",
-    question: "Cos'è una relazione identica?",
-    answer:
-      "Una relazione identica è una relazione che associa ogni elemento dell'insieme con se stesso, ed è scritta come x = x per ogni x.",
-  },
-  {
-    topic: "LE RELAZIONI TRA INSIEMI",
-    question: "Cos'è una relazione riflessiva?",
-    answer:
-      "Una relazione è riflessiva se ogni elemento dell'insieme è in relazione con se stesso.",
+      "La varianza misura la dispersione dei valori di una distribuzione rispetto alla loro media. È calcolata come la media dei quadrati delle differenze tra ogni valore e la media della distribuzione.",
   },
 ];

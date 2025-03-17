@@ -3,6 +3,12 @@ import { ChevronLeft, ChevronRight, Menu } from "lucide-react";
 import { flashcards } from "./utils";
 import { Flashcard } from "./types";
 
+const topics: string[] = [
+  "Analisi Matematica",
+  "Algoritmi e Strutture Dati",
+  "Calcolo delle Probabilità e Statistica",
+];
+
 const App: FC = () => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [hideAnswer, setHideAnswer] = useState<boolean>(true);
@@ -48,11 +54,9 @@ const App: FC = () => {
       >
         <div className="px-4 py-6">
           <ul className="divide-y-2 *:cursor-pointer" onClick={handleClick}>
-            <li className="px-2 py-3">ELEMENTI DI TEORIA DEGLI INSIEMI</li>
-            <li className="px-2 py-3">
-              ELEMENTI DI TEORIA DEGLI INSIEMI NUMERICI
-            </li>
-            <li className="px-2 py-3">LE RELAZIONI TRA INSIEMI</li>
+            {topics.map((topic) => (
+              <li className="px-2 py-3">{topic}</li>
+            ))}
           </ul>
         </div>
       </aside>
