@@ -4,9 +4,9 @@ import { flashcards } from "./utils";
 import { Flashcard } from "./types";
 
 const topics: string[] = [
-  "Analisi Matematica",
-  "Algoritmi e Strutture Dati",
-  "Calcolo delle Probabilità e Statistica",
+  "analisi matematica",
+  "algoritmi e strutture dati",
+  "calcolo delle probabilità e statistica",
 ];
 
 const App: FC = () => {
@@ -47,26 +47,31 @@ const App: FC = () => {
 
   return (
     <>
+      {openedMenu && (
+        <div
+          className="absolute inset-0 h-screen bg-black/50 z-10"
+          onClick={() => setOpenedMenu(!openedMenu)}
+        />
+      )}
       <aside
-        className={`fixed bg-gray-900 z-10 h-screen w-64 ${
+        className={`fixed bg-gray-800 z-20 h-screen w-64 ${
           openedMenu ? "translate-x-0" : "-translate-x-full"
         }`}
       >
         <div className="px-4 py-6">
           <ul className="divide-y-2 *:cursor-pointer" onClick={handleClick}>
-            {topics.map((topic) => (
-              <li className="px-2 py-3">{topic}</li>
+            {topics.map((topic, index) => (
+              <li key={index} className="px-2 py-3">
+                {topic}
+              </li>
             ))}
           </ul>
         </div>
       </aside>
-      <section className="relative bg-gray-950 h-screen flex justify-center items-center">
-        <div className="px-4 py-6">
-          <h1 className="mb-4 text-4xl font-extrabold text-center">
-            Flash Cards
-          </h1>
-          <p className="text-center mb-12">{filter}</p>
-          <div className="flex items-center mx-auto gap-4">
+      <section className="relative bg-gray-950 h-screen flex items-center justify-center">
+        <div>
+          <h2 className="text-2xl text-center mb-8">{filter}</h2>
+          <div className="flex items-center mx-auto justify-center">
             <button
               type="button"
               title="prev"
@@ -76,7 +81,7 @@ const App: FC = () => {
               <ChevronLeft />
             </button>
             <div
-              className="bg-gray-900 px-4 py-6 rounded-lg cursor-pointer h-96 md:w-xl md:h-60"
+              className="bg-gray-900 px-4 py-6 rounded-lg cursor-pointer aspect-[9/16] w-3xs md:aspect-video md:w-xl flex flex-col justify-around"
               onClick={() => setHideAnswer(!hideAnswer)}
             >
               <div className="mb-8 text-center">
@@ -105,7 +110,7 @@ const App: FC = () => {
           </div>
         </div>
         <div
-          className="absolute top-4 right-4 cursor-pointer"
+          className="absolute top-4 right-4 cursor-pointer z-20"
           onClick={() => setOpenedMenu(!openedMenu)}
         >
           <Menu />
